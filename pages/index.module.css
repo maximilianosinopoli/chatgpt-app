@@ -23,6 +23,10 @@
   width: 25%;
 }
 
+.label {
+  margin-bottom: 5px;
+}
+
 .book {
   color: white;
   background-color: rgb(255, 0, 0);
@@ -96,11 +100,11 @@
 }
 .main .result {
   font-weight: bold;
-  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 60%;
 }
 
 @media only screen and (max-width: 900px) {

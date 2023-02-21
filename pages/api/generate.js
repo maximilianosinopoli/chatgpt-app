@@ -51,7 +51,7 @@ export default async function (req, res) {
 }
 
 function generatePrompt(options, budgetMin, budgetMax, ocassion, hobbies, relationship) {
-            const prompt =  `Give me 3 present ideas for my ${relationship} for ${ocassion}. This person have hobbies like ${hobbies}. Give me options to the stuffs that this person likes. The buget is between ${budgetMin} and ${budgetMax} pounds.`
+            const prompt =  `Give me 3 present ideas for my ${relationship} for ${ocassion}. This person have hobbies like ${hobbies}. The budget is between ${budgetMin} and ${budgetMax} pounds. Explain why this product is a good option for that person.`
   // const prompt = 'Who won the last football world cup'
 
   console.log(prompt)
