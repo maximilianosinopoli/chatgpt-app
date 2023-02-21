@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Get the perfect present!</title>
+        <title>Get the perfect present!!!</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
