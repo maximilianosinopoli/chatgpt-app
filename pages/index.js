@@ -34,8 +34,8 @@ export default function Home() {
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
 
-      setResult(JSON.parse(data.result[0].text));
-      console.log(JSON.parse(data.result[0].text))
+      setResult(data.result[0].text);
+      console.log(data.result[0].text)
       
       setOptions('')
       setBudgetMin('')
@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Get the perfect present!!!</title>
+        <title>Get the perfect present!</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
@@ -105,18 +105,19 @@ export default function Home() {
           />
           <input type="submit" value="Generate a present" />
         </form>
-        {result ? <div className={styles.result}>
+        {/* {result ? <div className={styles.result}>
           {result.map((item, i) => {
             return (
               <div key={i} className={styles.red}>
-                <p><span className={styles.underline}>Item:</span> {item.product}</p>
-                <p><span className={styles.underline}>Price:</span> {item.price}</p>
+                <p><span className={styles.underline}>Item:</span>{item.product}</p>
+                <p><span className={styles.underline}>Price:</span>{item.price}</p>
                 <p>{item.why_might_be_a_good_present}</p>
                 <a target="_blank" href={item.where_to_buy_it}>Explore some options</a>
               </div>
             )
           })}
-        </div> : null}  
+        </div> : null}   */}
+        <div>{result}</div>
       </main>
     </div>
   );
