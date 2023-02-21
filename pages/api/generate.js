@@ -51,23 +51,9 @@ export default async function (req, res) {
 }
 
 function generatePrompt(options, budgetMin, budgetMax, ocassion, hobbies, relationship) {
-  //           const prompt =  `Give only one javascript array with ${options} objects, each object represents a present for my ${relationship} for ${ocassion}. This person have hobbies like ${hobbies}. Give ${options} options for a present for that person related to the stuffs that this person likes. The buget is between ${budgetMin} and ${budgetMax} pounds. Also, describe why that product might be a good present for that person, and give me a website where I can buy the product. The outpu as JSON object should include the following keys: product, price, place, why_might_be_a_good_present and where_to_buy_it and should follow the newt example:
-  //         [
-  //             {
-  //                 "product": "Book",
-  //                 "price": "28',
-  //                 "why_might_be_a_good_present": "This might be a good present because",
-  //                 "where_to_buy_it": "https://www.amazon.co.uk/s?k=wine+glass&i=stripbooks&crid=OHYCRBQMUDAW&sprefix=wine+glass%2Cstripbooks%2C74&ref=nb_sb_noss_2"
-  //             },
-  //             {
-  //                 "product": "Book",
-  //                 "price": "28',
-  //                 "why_might_be_a_good_present": "This might be a good present because",
-  //                 "where_to_buy_it": "https://www.amazon.co.uk/s?k=wine+glass&i=stripbooks&crid=OHYCRBQMUDAW&sprefix=wine+glass%2Cstripbooks%2C74&ref=nb_sb_noss_2"
-  //             }
-  //         ]
-  //  `
-  const prompt = 'Who won the last football world cup'
+            const prompt =  `Give me 3 present ideas for my ${relationship} for ${ocassion}. This person have hobbies like ${hobbies}. Give me options to the stuffs that this person likes. The buget is between ${budgetMin} and ${budgetMax} pounds. Also, describe why that product might be a good present for that person, and give me a website where I can buy the product.
+   `
+  // const prompt = 'Who won the last football world cup'
 
   console.log(prompt)
   return prompt
